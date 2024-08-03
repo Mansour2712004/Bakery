@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.home {
+  height: 100vh;
+  background-image: url(../img/drew-coffman-1872.jpg);
+  background-size: cover;
+}
+
+.home .layer {
+  width: 100;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  background-color: transparent;
+  padding: 5px 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav .nav-container{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .nav-container img {
+  padding-left: 20px;
+  width: 20%;
+}
+
+nav .nav-container img:hover {
+  cursor: pointer;
+}
+
+nav .nav-container ul{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  padding-top: 20px;
+  width: 45%;
+  justify-content: space-between;
+}
+
+nav .nav-container ul li a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+nav .nav-container ul li a:hover {
+  color: #8e7754;
+}
+
+nav .nav-container ul li .home-li {
+  color: #8e7754;
+}
+
+.home .home-content {
+  text-align: center;
+  color: white;
+  padding-top: 150px;
+}
+
+.home .home-content p {
+  font-size: 20px;
+  margin: 10px;
+  margin-top: 50px;
+}
+
+.home .home-content h1 {
+  font-size: 56px;
+}
+
+.home .home-content .btn {
+  padding: 20px 15px;
+  margin: 5px;
+  color: white;
+}
+
+.home .home-content .btn-brwon {
+  background-color: #8e7754;
+  border: none;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+.home .home-content .btn-brwon:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.home .home-content .btn-white {
+  background-color: transparent;
+  border: solid 1px white;
+  color: white;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+.home .home-content .btn-white:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.who-we-are {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.who-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 90%;
+  margin: 50px auto 0;
+}
+
+.who-img {
+  flex: 1;
+}
+
+.who-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.who-details {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.who-details h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.who-details p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #686868;
+}
+
+.who-details ul {
+  list-style: none;
+}
+
+.who-details ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.who-details ul li i {
+  padding: 13px;
+  color: #8e7754;
+  border-radius: 50%;
+  transition: color 0.3s;
+}
+
+.who-details ul li .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.who-details ul li .icon:hover i {
+  color: white;
+  background-color: #8e7754;
+  cursor: pointer;
+}
+
+.who-details ul li span {
+  padding-left: 20px;
+}
+
+.who-we-are2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f3f3f3
+}
+
+.who-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 80%;
+  margin: 50px auto 0;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.who-img2 {
+  flex: 1;
+}
+
+.who-img2 img {
+  max-width: 100%;
+  border-radius: 4px;
+  height: auto;
+}
+
+.who-details2 {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.who-details2 h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.who-details2 p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #686868;
+}
+
+.our-products {
+  padding-top: 50px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.our-products .address {
+  margin-bottom: 20px;
+}
+
+.our-products .address h2 {
+  padding-bottom: 20px;
+  font-family: "Alegreya Sans", sans-serif;;
+}
+
+.our-products .address p {
+  padding-bottom: 20px;
+  color: #686868;
+}
+
+.our-products .item {
+  display: inline-block;
+  width: 30%;
+  margin: 1.5%;
+  vertical-align: top;
+}
+
+.our-products .item:hover {
+  cursor: pointer;
+}
+
+.our-products .item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.our-products .item h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.our-products .item h3:hover {
+  color: #686868;
+}
+
+.our-products .item p {
+  color: #686868;
+}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  height: 80vh;
+  width: 90%;
+  transform: translateY(15%);
+  margin: auto;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 200px;
+}
+
+.contact-form h2 {
+  color: #8e7754;
+}
+
+.contact-form h1 {
+  font-size: 2em;
+}
+
+.contact-form p {
+  margin: 10px 0 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 20px 5px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #8e7754;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #ae956f;
+}
+
+.contact-image {
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transform: translateY(20%);
+}
+
+.footer {
+  transform: translateY(25%);
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8e7754;
+  color: white;
+}
+.copyright {
+  margin: 0 20px;
+  margin-left: 300px;
+}
+.right-icons {
+  display: flex;
+  margin-right: 300px;
+  gap: 30px;
+  cursor: pointer;
+}
